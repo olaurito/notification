@@ -1,0 +1,29 @@
+{
+    "name": "olaurito/notification",
+    "description": "Aprendendo sobre o composer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Olaurito\\Notification\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Olaurito Neto",
+            "email": "linkinneto.bsi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.6.3"
+    },
+    "config": {
+        "vendor-dir": "Lib_ext"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notification\\": "_app"
+        }
+    }
+}
