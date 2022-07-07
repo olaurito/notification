@@ -8,7 +8,9 @@ use Notification\Email;
 
 
 
-$novoEmail = new Email(2,'smtp.mailtrap.io', '0f7d6bd48c9e40','579d1ba0960c60', 'tls', 587, 'linkinneto.bsi@gmail.com', 'Equipe Olaurito');
-$novoEmail ->sendMail("Assunto de teste", "<p>Esse é um email de <b>teste</b></p>", "linkinneto.bsi@gmail.com", "Olaurito Neto", "ndigital.mkt@gmail.com", "olaurito");
+$email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port (587)",
+    "from@email.com", "From Name");
+
+$email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
 
 var_dump($novoEmail);
